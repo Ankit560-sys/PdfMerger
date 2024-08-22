@@ -12,7 +12,7 @@ const port = 3000
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname,"template/index.html"))
+  res.sendFile(path.join(__dirname,"index.html"))
 })
 app.post('/merge', upload.array('pdfs', 2), async (req, res, next)=> {
   // req.files is array of `photos` files
